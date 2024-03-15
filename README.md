@@ -7,11 +7,17 @@ Repositório destinado ao trabalho de Projeto Integrador do 3º Semestre do curs
 ## DER - Diagrama Entidade Relacionamento
 ![Imagem do MER do projeto](./Documentation/DER/DER_VeuEGravata.png)
 
-##PROTOTIPAÇÃO
+## PROTOTIPAÇÃO
 
-###Login
+### Login
 ![Imagem tela de login do projeto](./Documentation/Prototipacao/Login.PNG)
 
 
-###Cadastro
-![Imagem tela de login do projeto](./Documentation/Prototipacao/Cadastro.PNG)
+### Cadastro
+![Imagem tela de cadastro do projeto](./Documentation/Prototipacao/Cadastro.PNG)
+
+### Sobre nós
+![Imagem tela de Sobre nós do projeto](./Documentation/Prototipacao/Sobrenos.PNG)
+
+## Fluxograma
+![Imagem do fluxograma do projeto](./Documentation\Fluxograma\Fluxograma_pag.jpg)
