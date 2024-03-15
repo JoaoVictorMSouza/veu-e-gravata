@@ -10,14 +10,17 @@ Repositório destinado ao trabalho de Projeto Integrador do 3º Semestre do curs
 ## PROTOTIPAÇÃO
 
 ### Login
-![Imagem tela de login do projeto](./Documentation/Prototipacao/Login.PNG)
+![Imagem tela de Login do projeto](./Documentation/Prototipacao/Login.PNG)
 
 
 ### Cadastro
-![Imagem tela de cadastro do projeto](./Documentation/Prototipacao/Cadastro.PNG)
+![Imagem tela de Cadastro do projeto](./Documentation/Prototipacao/Cadastro.PNG)
 
 ### Sobre nós
 ![Imagem tela de Sobre nós do projeto](./Documentation/Prototipacao/SobreNos.png)
 
+### Home
+![Imagem tela de Home do projeto](./Documentation/Prototipacao/Inicio.PNG)
+
 ## Fluxograma
-![Imagem tela de Sobre nós do projeto](./Documentation/Fluxograma/Fluxograma_pag.jpg)
+![Imagem tela do fluxograma do projeto](./Documentation/Fluxograma/Fluxograma_pag.jpg)
