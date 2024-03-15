@@ -12,7 +12,6 @@ Repositório destinado ao trabalho de Projeto Integrador do 3º Semestre do curs
 ### Login
 ![Imagem tela de Login do projeto](./Documentation/Prototipacao/Login.PNG)
 
-
 ### Cadastro
 ![Imagem tela de Cadastro do projeto](./Documentation/Prototipacao/Cadastro.PNG)
 
