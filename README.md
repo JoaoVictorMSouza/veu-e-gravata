@@ -3,3 +3,6 @@ Repositório destinado ao trabalho de Projeto Integrador do 3º Semestre do curs
 
 ## MER - Modelo Entidade Relacionamento
 ![Imagem do MER do projeto](./Documentation/MER/MER_VeuEGravata.png)
+
+## DER - Diagrama Entidade Relacionamento
+![Imagem do MER do projeto](./Documentation/MER/DER_VeuEGravata.png)
