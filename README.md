@@ -17,7 +17,7 @@ Repositório destinado ao trabalho de Projeto Integrador do 3º Semestre do curs
 ![Imagem tela de cadastro do projeto](./Documentation/Prototipacao/Cadastro.PNG)
 
 ### Sobre nós
-![Imagem tela de Sobre nós do projeto](./Documentation/Prototipacao/Sobrenos.PNG)
+![Imagem tela de Sobre nós do projeto](./Documentation/Prototipacao/SobreNos.PNG)
 
 ## Fluxograma
 ![Imagem do fluxograma do projeto](./Documentation\Fluxograma\Fluxograma_pag.jpg)
