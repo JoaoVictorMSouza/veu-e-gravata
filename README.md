@@ -21,5 +21,11 @@ Repositório destinado ao trabalho de Projeto Integrador do 3º Semestre do curs
 ### Home
 ![Imagem tela de Home do projeto](./Documentation/Prototipacao/Inicio.PNG)
 
+### Fale Conosco
+![Imagem tela fale conosco do projeto](./Documentation/Prototipacao/Fale Conosco.PNG)
+
+### Casal
+![Imagem tela Casal do projeto](./Documentation/Prototipacao/Casal.PNG)
+
 ## Fluxograma
 ![Imagem tela do fluxograma do projeto](./Documentation/Fluxograma/Fluxograma_pag.jpg)
