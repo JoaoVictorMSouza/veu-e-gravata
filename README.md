@@ -31,7 +31,7 @@ Repositório destinado ao trabalho de Projeto Integrador do 3º Semestre do curs
 ![Imagem de confirmação de item](./Documentation/Prototipacao/Confirmação.png)
 
 ### Código
-![Imagem da tela de código do casal](./Documentation/Prototipacao/Código do casal.png)
+![Imagem da tela de código do casal](./Documentation/Prototipacao/CódigoDoCasal.png)
 
 ## Fluxograma
 ![Imagem tela do fluxograma do projeto](./Documentation/Fluxograma/Fluxograma_pag.jpg)
