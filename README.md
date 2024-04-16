@@ -27,12 +27,11 @@ Repositório destinado ao trabalho de Projeto Integrador do 3º Semestre do curs
 ### Casal
 ![Imagem tela Casal do projeto](./Documentation/Prototipacao/Casal.PNG)
 
-###Confirmação
+### Confirmação
 ![Imagem de confirmação de item](./Documentation/Prototipacao/Confirmação.png)
 
-### Codigo
+### Codigo do casal
 ![Imagem da tela de código do casal](./Documentation/Prototipacao/CodigoDoCasal.png)
 
 ## Fluxograma
 ![Imagem tela do fluxograma do projeto](./Documentation/Fluxograma/Fluxograma_pag.jpg)
-
