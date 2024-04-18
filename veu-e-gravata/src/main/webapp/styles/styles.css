@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* cor de fundo branca */
+}
+
+header {
+    background-color: #ffd700; /* cor de fundo dourada */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #000000; /* cor do texto preto */
+}
+
+main {
+    padding: 20px;
+}
+
+.center-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button[type="enviar"] {
+    background-color: #ffd700; /* cor de fundo dourada */
+    color: #ffffff; /* cor do texto branco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffcc00; /* cor de fundo dourada mais clara quando hover */
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.bottom-footer {
+    background-color: #ffd700; /* cor de fundo dourada */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.bottom-footer p {
+    margin: 0;
+    color: #000000; /* cor do texto preto */
+}
