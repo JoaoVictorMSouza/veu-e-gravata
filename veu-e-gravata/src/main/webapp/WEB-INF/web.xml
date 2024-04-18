@@ -6,6 +6,10 @@
 
   <display-name>veu-e-gravata</display-name>
 
+  <welcome-file-list>
+    <welcome-file>/pages/jsp/index.jsp</welcome-file>
+  </welcome-file-list>
+
   <listener>
     <listener-class>org.h2.server.web.DbStarter</listener-class>
   </listener>

@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<h2>Criar usuario</h2>
+<h2>Home</h2>
 
 <form action="/usuario" method="post">
     <label>Nome</label>
