@@ -73,5 +73,18 @@
         </configuration>
       </plugin>
     </plugins>
+
+    <resources>
+      <resource>
+        <directory>src/main/webapp/pages</directory>
+        <targetPath>META-INF/resources</targetPath>
+
+        <includes>
+          <include>pages/jsp/**/*.jsp</include>
+        </includes>
+
+      </resource>
+    </resources>
+
   </build>
 </project>
