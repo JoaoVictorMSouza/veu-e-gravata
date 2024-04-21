@@ -16,7 +16,7 @@
 
     <main>
         <div class="center-content">
-            <form id="contact-form" action="faleConosco" method="post">
+            <form id="contact-form" action="/faleConosco" method="post">
                 <div class="form-group">
                     <label for="name">Nome:</label>
                     <input type="text" id="name" name="name" required>

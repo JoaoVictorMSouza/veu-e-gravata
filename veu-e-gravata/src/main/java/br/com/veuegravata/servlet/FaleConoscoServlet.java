@@ -37,6 +37,7 @@ public class FaleConoscoServlet extends HttpServlet {
         this.mensagem = mensagem;
     }
 
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         nome = request.getParameter("name");
         email = request.getParameter("email");
@@ -46,8 +47,7 @@ public class FaleConoscoServlet extends HttpServlet {
         System.out.println("Email: " + getEmail());
         System.out.println("Mensagem: " + getMensagem());
 
-        // Redireciona o usuário para a página "Sobre Nós"
-        response.sendRedirect(request.getContextPath() + "/sobre.jsp");
-    }
+        request.getRequestDispatcher("/pages/jsp/index.jsp").forward(request, response);
 
+    }
 }

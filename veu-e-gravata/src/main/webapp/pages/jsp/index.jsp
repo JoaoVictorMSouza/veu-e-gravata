@@ -28,7 +28,7 @@
     <div>
       <div>
           <a href="/sobre">Sobre Nós</a>
-          <a href="/faleConosco">Fale Conosco</a>
+          <a href="/pages/jsp/faleConosco.jsp">Fale Conosco</a>
       </div>
 
     </div>
