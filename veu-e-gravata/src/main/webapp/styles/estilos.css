@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    background-color: #CBA35C;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+main h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #CBA35C;
+    padding: 20px;
+    text-align: left; /* Alinhar o texto à esquerda */
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinhar os ícones à esquerda */
+}
+
+.social-icons a {
+    color: #333;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.social-icons a i {
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: #4CAF50;
+}
+
+/* Adicionando estilos para a imagem e o texto lado a lado */
+.content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra todo o container */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adicionando uma cor de sobreposição semi-transparente */
+}
+
+.text-container {
+    z-index: 1; /* Garante que o texto esteja acima da imagem */
+}
+
+.logo-img {
+    width: 100px; /* Define a largura desejada para a imagem */
+    height: auto; /* Mantenha a proporção da imagem */
+}
+
+/* Adicionando uma borda branca aos links de login e cadastro */
+.bordered-link {
+    border: 2px solid white;
+    padding: 5px 10px; /* Adicionando preenchimento para tornar a borda mais visível */
+    border-radius: 5px; /* Adicionando bordas arredondadas */
+}
+
+/* Definindo a cor do texto para todos os links */
+a {
+    color: white; /* Alterando a cor do texto para branco */
+}

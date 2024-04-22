@@ -1,48 +1,64 @@
-<html>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-    <link rel="stylesheet" href="/styles/styles.css">
-
-    <title> Fale Conosco</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veu e Gravata - Casais</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../../../styles/estilos.css">
 </head>
-
 <body>
     <header>
-        <h1>Fale Conosco</h1>
+        <nav>
+            <ul>
+                <img src="assets/logo.png" alt="Logo da Veu e Gravata" id="your-image-id" class="logo-img">
+                <li><a href="#veuegravata">Veu e Gravata</a></li>
+                <li><a href="#casais">Casais</a></li>
+                <li><a href="/sobre">Sobre Nos</a></li>
+                <li><a href="/pages/jsp/faleConosco.jsp">Fale Conosco</a></li>
+                <li><a href="#login" class="bordered-link">Login</a></li>
+                <li><a href="#cadastre-se" class="bordered-link">Cadastre-se</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <div class="center-content">
-            <form id="contact-form" action="/faleConosco" method="post">
-                <div class="form-group">
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Mensagem:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
-            <div class="social-links">
-                <a href="https://api.whatsapp.com/send?phone=5511979903060" target="_blank"><img src="/assets/wpp.png" alt="WhatsApp"></a>
-                <a href="https://www.instagram.com/veuegravata/" target="_blank"><img src="/assets/Instagram.png" alt="Instagram"></a>
-                <a href="https://www.tiktok.com/@veuegravata" target="_blank"><img src="/assets/TikTok.png" alt="TikTok"></a>
+
+        <h3>NOSSOS CONTATOS</h3>
+        <br>
+        <p>Telefone: 4002-8922</p>
+        <p>Email: <a href="mailto:veuegravata@gmail.com">veuegravata@gmail.com</a></p>
+        <br><br><br>
+
+        <p>QUER TORNAR O SEU CASAMENTO </p>
+        <p>AINDA MAIS INESQUECIVEL COM </p>
+        <p>NOSSA PLATAFORMA DE PRESENTES ?</p>
+
+        <br>
+
+        <p>Entre em contato conosco e monte sua lista </p>
+        <p> diretamente com a gente</p>
+
+        <br><br><br>
+
+        <p>Nos ajude sempre a melhorar! </p>
+        <p>Deixe aqui a sua sugestao:</p>
+
+        <br>
+
+        <form id="contact-form" action="/faleConosco" method="post">
+            <div class="form-group">
+                <textarea id="message" name="message" rows="4" required></textarea>
             </div>
-        </div>
+            <button type="submit">Enviar</button>
+        </form>
     </main>
 
-    <footer>
-           <p>&copy; 2024 Véu e Gravata</p>
-       </footer>
-       <script src="scripts.js"></script>
-   </body>
-
-   </html>
+   <footer>
+       <div class="social-icons">
+           <a href="https://www.instagram.com/veuegravata"><i class="fab fa-instagram"></i> @veuegravata</a>
+           <a href="https://www.tiktok.com/@veuegravata"><i class="fab fa-tiktok"></i> @veuegravata</a>
+       </div>
+   </footer>
+</body>
+</html>

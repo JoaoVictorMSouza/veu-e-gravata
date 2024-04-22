@@ -1,40 +1,56 @@
-<html>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-    <link rel="stylesheet" href="/styles/styles.css">
-
-    <title> Sobre Nós</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veu e Gravata - Casais</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../../../styles/estilos.css">
 </head>
-
 <body>
     <header>
-        <h1>Sobre Nós</h1>
+        <nav>
+            <ul>
+                <img src="assets/logo.png" alt="Logo da Veu e Gravata" id="your-image-id" class="logo-img">
+                <li><a href="#veuegravata">Veu e Gravata</a></li>
+                <li><a href="#casais">Casais</a></li>
+                <li><a href="/sobre">Sobre Nos</a></li>
+                <li><a href="/pages/jsp/faleConosco.jsp">Fale Conosco</a></li>
+                <li><a href="#login" class="bordered-link">Login</a></li>
+                <li><a href="#cadastre-se" class="bordered-link">Cadastre-se</a></li>
+            </ul>
+        </nav>
     </header>
-
     <main>
-        <p>Criado a partir da idea de um grupo de jovens, a "Veu & Gravata" foi desenvolvida para ser mais do que um e-commerce de presentes, mas tambem voltado a atender e entender os noivos através da melhor experiencia para aqueles que monatem suas listas de presentes</p>
+        <section id="about">
+            <div class="content">
+                <div class="image-container">
+                    <img src="assets/logo.png" alt="Logo da Veu e Gravata" id="your-image-id" class="logo-img">
+                </div>
+                <div class="text">
+                    <h1 id="veuegravata">Sobre nos</h1>
 
-        <h2>Missão</h2>
-        <p>Nossa missão é simples, mas poderosa: ser a fonte confiável de presentes de casamento que celebrem o amor, a individualidade e a união duradoura. Buscamos inspirar casais em toda jornada de planejamento do casamento, oferecendo uma gama diversificada de produtos que refletem sua personalidade e estilo exclusivos.</p>
-        <h2>Visão</h2>
-        <p>Nossa visão é criar um legado de momentos inesquecíveis, onde cada presente entregue é mais do que um mero objeto - é uma expressão tangível de amor, apreço e compromisso. Visualizamos um mundo onde os casais encontram em nossa empresa não apenas uma loja, mas um parceiro dedicado na jornada para o grande dia e além.</p>
-        <h2>Valores</h2>
-        <ul>
-            <li>Paixão pela Criatividade: Somos impulsionados pela busca incessante da inovação e da originalidade em tudo o que fazemos.</li>
-            <li>Compromisso com a Excelência: Buscamos incansavelmente a perfeição em cada detalhe, garantindo a satisfação total de nossos clientes.</li>
-            <li>Respeito pela Individualidade: Celebramos a diversidade e a singularidade de cada casal, honrando suas escolhas e preferências.</li>
-            <li>Integridade em Ação: Operamos com honestidade, transparência e ética em todas as nossas interações, construindo relacionamentos baseados na confiança mútua.</li>
-            <li>Empatia e Cuidado: Colocamos o coração em tudo o que fazemos, buscando compreender as necessidades e desejos de nossos clientes para superar suas expectativas.</li>
-        </ul>
+                    <p>Fundado em 2024 </p>
+
+                    <p> Criada a partir de um grupo de </p>
+                    <p>jovens, a "Veu e Gravata" foi elaborado para ser um site </p>
+                    <p>totalmente voltado para atender noivos e trazer a melhor </p>
+                    <p>experiencia para aqueles que montam sua lista de presentes.</p>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="fale-conosco">
+
+        </section>
     </main>
-
     <footer>
-        <p>&copy; 2024 Véu e Gravata</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/veuegravata"><i class="fab fa-instagram"></i> @veuegravata</a>
+            <a href="https://www.tiktok.com/@veuegravata"><i class="fab fa-tiktok"></i> @veuegravata</a>
+        </div>
     </footer>
-    <script src="scripts.js"></script>
 </body>
-
 </html>
