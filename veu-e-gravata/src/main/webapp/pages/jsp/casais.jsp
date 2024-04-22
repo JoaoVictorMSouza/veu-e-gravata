@@ -11,13 +11,13 @@
     <header>
         <nav>
             <ul>
-                <img src="assets/logoHeader.png" alt="Logo da Veu e Gravata" id="your-image-id" class="logo-img">
-                <li><a href="/pages/jsp/index.jsp">Veu e Gravata</a></li>
-                <li><a href="pages/jsp/casais.jsp">Casais</a></li>
-                <li><a href="/sobre">Sobre Nos</a></li>
-                <li><a href="/pages/jsp/faleConosco.jsp">Fale Conosco</a></li>
-                <li><a href="#login" class="bordered-link">Login</a></li>
-                <li><a href="/pages/jsp/cadastro.jsp"class="bordered-link">Cadastre-se</a></li>
+                    <img src="assets/logoHeader.png" alt="Logo da Veu e Gravata" id="your-image-id" class="logo-img">
+                                <li><a href="/pages/jsp/index.jsp">Veu e Gravata</a></li>
+                                <li><a href="pages/jsp/casais.jsp">Casais</a></li>
+                                <li><a href="/sobre">Sobre Nos</a></li>
+                                <li><a href="/pages/jsp/faleConosco.jsp">Fale Conosco</a></li>
+                                <li><a href="#login" class="bordered-link">Login</a></li>
+                                <li><a href="/pages/jsp/cadastro.jsp"class="bordered-link">Cadastre-se</a></li>
 
             </ul>
         </nav>
@@ -25,16 +25,16 @@
 
    <main class="content">
       <div class="image-container">
-          <img src="/assets/home.jpg" alt="Imagem de fundo" class="background-image">
+          <img src="src/main/webapp/assets/exemplo.jpg"" alt="Imagem de fundo" class="background-image">
           <div class="overlay"></div> <!-- Adicionando uma camada de sobreposição para melhorar a legibilidade do texto -->
       </div>
       <div class="text-container">
-          <div>O melhor para o seu casamento !</div>
+
           <form action="/usuario" method="post">
               <div class="form-group">
                   <input type="text" id="nome" name="nome">
               </div>
-              <button type="submit">Buscar casal</button>
+              <button type="submit">Digite o codigo do casal</button>
           </form>
       </div>
    </main>
