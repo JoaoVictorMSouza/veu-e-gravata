@@ -34,7 +34,7 @@ main {
     text-align: center;
 }
 
-main h1 {
+main h2 {
     color: black;
     margin-bottom: 20px;
 }
@@ -59,14 +59,14 @@ footer {
     width: 100%;
     background-color: #CBA35C;
     padding: 20px;
-    text-align: left; /* Alinhar o texto à esquerda */
+    text-align: left;
 }
 
 .social-icons {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinhar os ícones à esquerda */
+    align-items: flex-start;
 }
 
 .social-icons a {
@@ -83,7 +83,6 @@ footer {
     color: #4CAF50;
 }
 
-/* Adicionando estilos para a imagem e o texto lado a lado */
 .content {
     position: relative;
     display: flex;
@@ -93,7 +92,7 @@ footer {
 
 .image-container {
     position: relative;
-    margin-right: 50px; /* Espaçamento entre a imagem e o texto */
+    margin-right: 50px;
 }
 
 .background-image {
@@ -103,7 +102,7 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1; /* Coloca a imagem de fundo atrás do conteúdo */
+    z-index: -1;
 }
 
 .overlay {
@@ -112,31 +111,28 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Adicionando uma cor de sobreposição semi-transparente */
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .text-container {
-    z-index: 1; /* Garante que o texto esteja acima da imagem */
+    z-index: 1;
 }
 
 .logo-img {
-    width: 100px; /* Define a largura desejada para a imagem */
-    height: auto; /* Mantenha a proporção da imagem */
+    width: 100px;
+    height: auto;
 }
 
-/* Adicionando uma borda branca aos links de login e cadastro */
 .bordered-link {
     border: 2px solid white;
-    padding: 5px 10px; /* Adicionando preenchimento para tornar a borda mais visível */
-    border-radius: 5px; /* Adicionando bordas arredondadas */
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
-/* Definindo a cor do texto para todos os links */
 a {
-    color: white; /* Alterando a cor do texto para branco */
+    color: white;
 }
 
-/* Estilos para o formulário */
 form {
     margin-top: 20px;
 }
