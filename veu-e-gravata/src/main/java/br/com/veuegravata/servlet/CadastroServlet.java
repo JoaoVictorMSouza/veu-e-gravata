@@ -1,5 +1,8 @@
 package br.com.veuegravata.servlet;
 
+import dao.CadastroDao;
+import model.Cadastro;
+
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,6 +18,16 @@ public class CadastroServlet extends HttpServlet {
         String email = request.getParameter("email");
         String cpf = request.getParameter("cpf");
         String senha = request.getParameter("senha");
+
+        Cadastro cadastro = new Cadastro();
+        cadastro.setName(nome);
+        cadastro.setEmail(email);
+        cadastro.setSenha(senha);
+        cadastro.setCpf(cpf);
+
+        CadastroDao cadastroDao = new CadastroDao();
+
+        cadastroDao.createCadastro(cadastro);
 
         // Aqui você deve realizar a lógica para salvar os dados do cadastro no banco de dados
         // Por exemplo, você pode chamar um método em uma classe de serviço para fazer isso
