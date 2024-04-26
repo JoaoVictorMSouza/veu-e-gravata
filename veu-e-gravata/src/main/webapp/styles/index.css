@@ -1,0 +1,58 @@
+body {
+    background-image: url("../../../assets/home2.png"); /* Define a imagem de fundo */
+    background-size: cover; /* Garante que a imagem de fundo cubra toda a área */
+    background-position: center; /* Centraliza a imagem de fundo */
+    color: white; /* Define a cor do texto como branco */
+    font-weight: bold; /* Define todas as letras como negrito */
+}
+
+/* Estilo para o conteúdo principal */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Centraliza verticalmente na tela */
+    text-align: center; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona um padding ao redor do conteúdo */
+    box-sizing: border-box; /* Faz com que o padding seja considerado no cálculo do tamanho total */
+}
+
+/* Estilo para a imagem de fundo */
+.image-container {
+    margin-bottom: 20px; /* Adiciona espaço abaixo do contêiner de imagem */
+}
+
+/* Estilo para o contêiner de texto */
+.text-container {
+    margin-top: 20px; /* Adiciona espaço acima do contêiner de texto */
+}
+
+
+
+.background-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.golden-button {
+    background-color: #CBA35C; /* Cor dourada */
+    color: white;
+    border: none; /* Remove a borda */
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.white-button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 20px; /* Borda oval para os botoes */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer;
+}
+

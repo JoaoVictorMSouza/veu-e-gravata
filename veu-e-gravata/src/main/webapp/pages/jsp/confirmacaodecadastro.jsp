@@ -9,19 +9,19 @@
     <link rel="stylesheet" href="../../../styles/estilos.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <img src="/assets/logoHeader.png" alt="Logo da Veu e Gravata" id="your-image-id" class="logo-img">
-                <li><a href="/pages/jsp/index.jsp">Veu e Gravata</a></li>
-                <li><a href="pages/jsp/casais.jsp">Casais</a></li>
-                <li><a href="/sobre">Sobre Nos</a></li>
-                <li><a href="/pages/jsp/faleConosco.jsp">Fale Conosco</a></li>
-                <li><a href="#login" class="bordered-link">Login</a></li>
-                <li><a href="/pages/jsp/cadastro.jsp" class="bordered-link">Cadastre-se</a></li>
-            </ul>
-        </nav>
-    </header>
+   <header>
+           <nav>
+              <ul>
+                  <img src="/assets/logoHeader.png" alt="Logo da Veu e Gravata" id="your-image-id" class="logo-img">
+                  <li><a href="/pages/jsp/index.jsp">Veu e Gravata</a></li>
+                  <li><a href="/pages/jsp/casais.jsp">Casais</a></li>
+                  <li><a href="/sobre">Sobre Nos</a></li>
+                  <li><a href="/pages/jsp/faleConosco.jsp">Fale Conosco</a></li>
+                  <li><a href="/pages/jsp/login.jsp" class="bordered-link">Login</a></li> <!-- Corrigido para /pages/jsp/login.jsp -->
+                  <li><a href="/pages/jsp/cadastro.jsp" class="bordered-link">Cadastre-se</a></li>
+              </ul>
+           </nav>
+       </header>
 
     <main>
         <h2>Cadastro Realizado com Sucesso!</h2>
@@ -30,9 +30,10 @@
 
     <footer>
         <div class="social-icons">
-            <a href="https://www.instagram.com/veuegravata"><i class="fab fa-instagram"></i> @veuegravata</a>
-            <a href="https://www.tiktok.com/@veuegravata"><i class="fab fa-tiktok"></i> @veuegravata</a>
-        </div>
+        <div class="social-icons">
+                            <a href="https://www.instagram.com/veuegravata" target="_blank"><i class="fab fa-instagram"></i> @veuegravata</a>
+                            <a href="https://www.tiktok.com/@veuegravata" target="_blank" ><i class="fab fa-tiktok"></i> @veuegravata</a>
+                        </div>
     </footer>
 </body>
 </html>

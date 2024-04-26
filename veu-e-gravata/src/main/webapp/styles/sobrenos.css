@@ -1,0 +1,39 @@
+/* Importa a fonte Cardo */
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&display=swap');
+
+#about {
+    text-align: center; /* Centralizar o conteúdo */
+}
+
+.content {
+    display: flex; /* Usando flexbox para organizar os elementos lado a lado texto e imagem logo */
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: center; /* Centralizar horizontalmente */
+    width: 100%; /* Garante que o conteúdo ocupe toda a largura da seção */
+}
+
+.image-container {
+    margin-right: 100px; /* Adicionando um espaçamento à direita para separar a imagem do texto */
+}
+
+.logoSobre-img {
+    width: 150%;
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 300px; /* Define uma largura máxima para a imagem */
+}
+
+.text {
+     flex: 1; /* Faz com que a imagem e o texto ocupem proporções iguais */
+     text-align: center; /* Centraliza o texto horizontalmente */
+     max-width: 600px;
+}
+
+/* Estilos para o texto "Fundada em 2024" */
+.fundada-em {
+    font-family: 'Cardo', serif;
+    font-style: italic;
+}
+p {
+font-family: 'Cardo', serif;
+
+}

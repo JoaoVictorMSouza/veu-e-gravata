@@ -28,7 +28,7 @@ public class LoginServlet extends HttpServlet {
 
             resp.sendRedirect(req.getContextPath() + "/pages/jsp/index.jsp"); // Redireciona para a página home após o login bem-sucedido
         }else{
-            req.setAttribute("message", "Credenciais Incorreta!");
+            req.setAttribute("message", "Ops! Parece que o seu nome de usuário ou senha estão incorretos. Por favor, verifique e tente novamente!");
 
             req.getRequestDispatcher("/pages/jsp/login.jsp").forward(req, resp); // Fica na página de login com uma mensagem de erro
         }

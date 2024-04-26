@@ -50,6 +50,7 @@ nav ul li {
 
 nav ul li a {
     font-weight: bold;
+
 }
 
 footer {
@@ -127,6 +128,7 @@ footer {
     border: 2px solid white;
     padding: 5px 10px;
     border-radius: 5px;
+
 }
 
 a {
@@ -145,3 +147,8 @@ form label {
 form input {
     margin-bottom: 10px;
 }
+
+#carouselExample {
+    max-height: 80vh; /* Defina a altura máxima desejada */
+}
+
