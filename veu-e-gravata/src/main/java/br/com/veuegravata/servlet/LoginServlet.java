@@ -27,15 +27,13 @@ public class LoginServlet extends HttpServlet {
         boolean isValidUser = new LoginDao().verifyCredentials(login);
 
         if(isValidUser){
-
             Usuario usuario = new UsuarioDao().getUsuario(email);
 
             if (usuario != null) {
-                req.getSession().setAttribute("LoggedUser", usuario);
-
                 HttpSession session = req.getSession();
-                session.setAttribute("loggedInUser", usuario);
+                session.setAttribute("usuarioLogado", usuario);
             }
+            
             resp.sendRedirect(req.getContextPath() + "/pages/jsp/index.jsp"); // Redireciona para a página home após o login bem-sucedido
         } else {
             req.setAttribute("message", "Ops! Parece que o seu nome de usuário ou senha estão incorretos. Por favor, verifique e tente novamente!");

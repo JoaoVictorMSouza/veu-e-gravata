@@ -1,3 +1,12 @@
+<%@ page import="model.Usuario" %>
+<%
+    Boolean logadoObj = (Boolean)session.getAttribute("isLogado");
+    boolean logado = (logadoObj != null) ? logadoObj : false;
+    if (!logado) {
+        response.sendRedirect("/pages/jsp/login.jsp");
+        return;
+    }
+%>
 <!DOCTYPE html>
 <html lang="pt-br">
 
