@@ -7,6 +7,9 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 a {
@@ -32,6 +35,8 @@ header nav ul {
 main {
     padding: 30px;
     text-align: center;
+    flex-grow: 1;
+    display: flex;
 }
 
 main h2 {
@@ -46,17 +51,15 @@ nav ul {
 
 nav ul li {
     margin-right: 10px;
+    display: flex;
+    align-items: center;
 }
 
 nav ul li a {
     font-weight: bold;
-
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
     background-color: #CBA35C;
     padding: 20px;

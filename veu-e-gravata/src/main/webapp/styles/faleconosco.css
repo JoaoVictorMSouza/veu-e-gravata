@@ -8,7 +8,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Centraliza verticalmente na tela */
     text-align: center; /* Centraliza horizontalmente */
 }
 
