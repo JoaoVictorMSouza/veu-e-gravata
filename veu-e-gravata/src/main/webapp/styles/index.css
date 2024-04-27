@@ -42,6 +42,7 @@ body {
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .white-button {
@@ -52,4 +53,9 @@ body {
     border-radius: 20px; /* Borda oval para os botoes */
     font-weight: bold; /* Texto em negrito */
     cursor: pointer;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
 }

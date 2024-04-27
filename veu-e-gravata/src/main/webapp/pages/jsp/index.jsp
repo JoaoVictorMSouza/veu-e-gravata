@@ -16,18 +16,14 @@
             <img src="../../webapp/assets/home2.png" alt="home2.png" class="background-image">
         </div>
 
-        <div>
+        <div class="container">
             <p>A lista de presentes com melhor custo-beneficio.</p>
             <p>Mais seguranca para voce e seus convidados!</p>
             <p>Tudo que voce precisa em um so lugar!</p>
             <p>COMO FUNCIONA?</p>
             <p>1. Crie sua lista de presentes</p>
             <!-- Botao para a página listaDePresente.jsp -->
-            <form action="/pages/jsp/listaDePresentes.jsp" method="post">
-                <div>
-                    <a href="/pages/jsp/listaDePresentes.jsp" class="golden-button">FACA SUA LISTA</a>
-                </div>
-            </form>
+            <a href="${pageContext.request.contextPath}/listaDePresentes" class="golden-button">FACA SUA LISTA</a>
         </div>
     </main>
 
