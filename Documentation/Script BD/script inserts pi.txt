@@ -1,0 +1,74 @@
+INSERT INTO TB_USUARIO (DS_CIDADE, DS_UF, DS_EMAIL, DS_COMPLEMENTO, DS_CEP, DS_CPF, DT_NASCIMENTO, DS_CELULAR, DS_NOME, DS_SENHA, DS_LOGRADOURO)
+VALUES ('São Paulo', 'SP', 'usuario1@example.com', 'Apt. 101', '01010-010', '123.456.789-01', '1990-01-01', '(11) 98765-4321', 'João Silva', 'senha123', 'Rua A'),
+       ('Rio de Janeiro', 'RJ', 'usuario2@example.com', 'Casa', '20000-000', '987.654.321-09', '1985-05-15', '(21) 99999-8888', 'Maria Oliveira', 'segredo456', 'Avenida B'),
+       ('Belo Horizonte', 'MG', 'usuario3@example.com', 'Sala 303', '30000-000', '234.567.890-12', '1982-10-20', '(31) 12345-6789', 'Pedro Santos', 'minhasenha', 'Travessa C'),
+       ('Brasília', 'DF', 'usuario4@example.com', 'Bloco B', '70000-000', '345.678.901-23', '1978-07-12', '(61) 98765-4321', 'Ana Souza', 'senha1234', 'Quadra D'),
+       ('Salvador', 'BA', 'usuario5@example.com', 'Andar 2', '40000-000', '456.789.012-34', '1995-03-25', '(71) 55555-1234', 'Luiz Oliveira', 'minhasenhasegura', 'Praça E'),
+       ('Recife', 'PE', 'usuario6@example.com', 'Lote 5', '50000-000', '567.890.123-45', '1989-12-30', '(81) 98765-4321', 'Fernanda Lima', 'senha12345', 'Rua F'),
+       ('Porto Alegre', 'RS', 'usuario7@example.com', 'Bloco C', '90000-000', '678.901.234-56', '1980-08-05', '(51) 12345-6789', 'Carlos Mendes', 'senha123456', 'Avenida G'),
+       ('Curitiba', 'PR', 'usuario8@example.com', 'Sobrado', '80000-000', '789.012.345-67', '1976-04-18', '(41) 99999-8888', 'Mariana Almeida', 'senha1234567', 'Travessa H'),
+       ('Fortaleza', 'CE', 'usuario9@example.com', 'Apartamento 202', '60000-000', '890.123.456-78', '1998-11-08', '(85) 55555-1234', 'Rafael Lima', 'senhasupersegura', 'Rua I'),
+       ('Manaus', 'AM', 'usuario10@example.com', 'Casa 1', '69000-000', '901.234.567-89', '1993-07-03', '(92) 98765-4321', 'Carolina Pereira', 'senha12345678', 'Avenida J'),
+       ('Goiânia', 'GO', 'usuario11@example.com', 'Bloco D', '74000-000', '012.345.678-90', '1987-09-14', '(62) 12345-6789', 'Felipe Santos', 'senhasegurissima', 'Rua K'),
+       ('Belém', 'PA', 'usuario12@example.com', 'Apartamento 101', '66000-000', '123.456.789-01', '1984-02-28', '(91) 99999-8888', 'Juliana Oliveira', 'senhasecreta', 'Travessa L'),
+       ('Florianópolis', 'SC', 'usuario13@example.com', 'Bloco E', '88000-000', '234.567.890-12', '1991-06-10', '(48) 55555-1234', 'Gustavo Silva', 'senhamuito123', 'Avenida M'),
+       ('Vitória', 'ES', 'usuario14@example.com', 'Andar 3', '29000-000', '345.678.901-23', '1986-10-17', '(27) 98765-4321', 'Larissa Santos', 'senha0987', 'Rua N'),
+       ('João Pessoa', 'PB', 'usuario15@example.com', 'Casa 2', '58000-000', '456.789.012-34', '1983-03-07', '(83) 12345-6789', 'Ricardo Oliveira', 'senha5432', 'Travessa O'),
+       ('Natal', 'RN', 'usuario16@example.com', 'Sobrado 1', '59000-000', '567.890.123-45', '1979-12-12', '(84) 99999-8888', 'Amanda Lima', 'senhasegura098', 'Avenida P'),
+       ('Campinas', 'SP', 'usuario17@example.com', 'Apartamento 303', '13000-000', '678.901.234-56', '1997-08-22', '(19) 55555-1234', 'Rodrigo Almeida', 'senha9876', 'Rua Q'),
+       ('Campo Grande', 'MS', 'usuario18@example.com', 'Bloco F', '79000-000', '789.012.345-67', '1981-05-03', '(67) 98765-4321', 'Mariana Oliveira', 'senhamuito1234', 'Avenida R'),
+       ('Cuiabá', 'MT', 'usuario19@example.com', 'Casa 3', '78000-000', '890.123.456-78', '1994-04-09', '(65) 12345-6789', 'Paulo Silva', 'senha123456789', 'Travessa S'),
+       ('Teresina', 'PI', 'usuario20@example.com', 'Sobrado 2', '64000-000', '901.234.567-89', '1988-11-27', '(86) 99999-8888', 'Vanessa Santos', 'senha654321', 'Avenida T');
+
+
+
+
+
+
+
+INSERT INTO `TB_PRODUTO` (`VL_PRECO`, `HX_FOTO_PRODUTO`, `DS_FOTO_PRODUTO`, `DS_NSU`, `DS_PRODUTO`, `DS_NOME`) VALUES 
+(1999.99, 'geladeira.jpg', 'geladeira', 'NSU001', 'Geladeira Duplex Frost Free', 'Geladeira_Duplex_Frost_Free'),
+(1499.99, 'lava-roupas.jpg', 'lava_roupas', 'NSU002', 'Lava-Roupas Frontal 10kg', 'Lava_Roupas_Frontal_10kg'),
+(799.99, 'fogao.jpg', 'fogao', 'NSU003', 'Fogão 5 Bocas Inox', 'Fogao_5_Bocas_Inox'),
+(299.99, 'cafeteira.jpg', 'cafeteira', 'NSU004', 'Cafeteira Expresso Automática', 'Cafeteira_Expresso_Automatica'),
+(399.99, 'liquidificador.jpg', 'liquidificador', 'NSU005', 'Liquidificador Power Plus 1000W', 'Liquidificador_Power_Plus_1000W'),
+(899.99, 'panela-eletrica.jpg', 'panela_eletrica', 'NSU006', 'Panela Elétrica de Pressão 6L', 'Panela_Eletrica_de_Pressao_6L'),
+(499.99, 'batedeira.jpg', 'batedeira', 'NSU007', 'Batedeira Planetária 500W', 'Batedeira_Planetaria_500W'),
+(1599.99, 'aspirador-po.jpg', 'aspirador_po', 'NSU008', 'Aspirador de Pó Cyclone 2000W', 'Aspirador_de_Po_Cyclone_2000W'),
+(599.99, 'torradeira.jpg', 'torradeira', 'NSU009', 'Torradeira Elétrica Inox', 'Torradeira_Eletrica_Inox'),
+(699.99, 'sanduicheira.jpg', 'sanduicheira', 'NSU010', 'Sanduicheira Grill Antiaderente', 'Sanduicheira_Grill_Antiaderente'),
+(1299.99, 'microondas.jpg', 'microondas', 'NSU011', 'Microondas 30L Espelhado', 'Microondas_30L_Espelhado'),
+(899.99, 'jogo-de-panelas.jpg', 'jogo_de_panelas', 'NSU012', 'Jogo de Panelas Antiaderente 7 Peças', 'Jogo_de_Panelas_Antiaderente_7_Pecas'),
+(299.99, 'espremedor.jpg', 'espremedor', 'NSU013', 'Espremedor de Frutas Citrus 500ml', 'Espremedor_de_Frutas_Citrus_500ml'),
+(499.99, 'grill.jpg', 'grill', 'NSU014', 'Grill Elétrico com Tampa de Vidro', 'Grill_Eletrico_com_Tampa_de_Vidro'),
+(249.99, 'ferro-passar.jpg', 'ferro_passar', 'NSU015', 'Ferro de Passar a Vapor', 'Ferro_de_Passar_a_Vapor'),
+(399.99, 'ventilador.jpg', 'ventilador', 'NSU016', 'Ventilador de Mesa 30cm', 'Ventilador_de_Mesa_30cm'),
+(149.99, 'mixer.jpg', 'mixer', 'NSU017', 'Mixer 3 em 1 com Triturador', 'Mixer_3_em_1_com_Triturador'),
+(799.99, 'churrasqueira-eletrica.jpg', 'churrasqueira_eletrica', 'NSU018', 'Churrasqueira Elétrica com Grelha', 'Churrasqueira_Eletrica_com_Grelha'),
+(399.99, 'centrifuga.jpg', 'centrifuga', 'NSU019', 'Centrífuga de Salada com Bowl', 'Centrifuga_de_Salada_com_Bowl'),
+(599.99, 'airfryer.jpg', 'airfryer', 'NSU020', 'Airfryer Digital 5L', 'Airfryer_Digital_5L');
+
+
+
+
+INSERT INTO TB_CASAL (CD_CASAL, DH_PREVISAO_CASAMENTO, HX_FOTO_CASAL, DS_FOTO_CASAL) VALUES ('CASAL001', '2024-05-15 14:00:00', 'foto001.jpg', 'Casal sorrindo na praia');
+INSERT INTO TB_CASAL (CD_CASAL, DH_PREVISAO_CASAMENTO, HX_FOTO_CASAL, DS_FOTO_CASAL) VALUES ('CASAL002', '2024-06-20 16:30:00', 'foto002.jpg', 'Casal dançando em um jardim');
+INSERT INTO TB_CASAL (CD_CASAL, DH_PREVISAO_CASAMENTO, HX_FOTO_CASAL, DS_FOTO_CASAL) VALUES ('CASAL003', '2024-07-10 12:00:00', 'foto003.jpg', 'Casal abraçado em um campo');
+INSERT INTO TB_CASAL (CD_CASAL, DH_PREVISAO_CASAMENTO, HX_FOTO_CASAL, DS_FOTO_CASAL) VALUES ('CASAL004', '2024-08-05 15:45:00', 'foto004.jpg', 'Casal olhando o pôr do sol');
+INSERT INTO TB_CASAL (CD_CASAL, DH_PREVISAO_CASAMENTO, HX_FOTO_CASAL, DS_FOTO_CASAL) VALUES ('CASAL005', '2024-09-02 11:00:00', 'foto005.jpg', 'Casal se beijando em um parque');
+INSERT INTO TB_CASAL (CD_CASAL, DH_PREVISAO_CASAMENTO, HX_FOTO_CASAL, DS_FOTO_CASAL) VALUES ('CASAL006', '2024-10-18 17:20:00', 'foto006.jpg', 'Casal trocando alianças');
+INSERT INTO TB_CASAL (CD_CASAL, DH_PREVISAO_CASAMENTO, HX_FOTO_CASAL, DS_FOTO_CASAL) VALUES ('CASAL007', '2024-11-30 10:10:00', 'foto007.jpg', 'Casal segurando balões de coração');
+INSERT INTO TB_CASAL (CD_CASAL, DH_PREVISAO_CASAMENTO, HX_FOTO_CASAL, DS_FOTO_CASAL) VALUES ('CASAL008', '2025-01-05 13:50:00', 'foto008.jpg', 'Casal comemorando no restaurante');
+INSERT INTO TB_CASAL (CD_CASAL, DH_PREVISAO_CASAMENTO, HX_FOTO_CASAL, DS_FOTO_CASAL) VALUES ('CASAL009', '2025-02-14 09:00:00', 'foto009.jpg', 'Casal trocando presentes no Dia dos Namorados');
+INSERT INTO TB_CASAL (CD_CASAL, DH_PREVISAO_CASAMENTO, HX_FOTO_CASAL, DS_FOTO_CASAL) VALUES ('CASAL010', '2025-03-20 14:15:00', 'foto010.jpg', 'Casal caminhando de mãos dadas');
+
+UPDATE TB_CASAL SET DS_FOTO_CASAL = CONCAT(CD_CASAL, '.jpg');
+
+
+INSERT INTO TB_PRODUTO_CASAL (FK_PRODUTO, FK_CASAL, TG_RESERVADO, FK_USUARIO) VALUES (1, 1, 0, NULL);
+INSERT INTO TB_PRODUTO_CASAL (FK_PRODUTO, FK_CASAL, TG_RESERVADO, FK_USUARIO) VALUES (1, 2, 0, NULL);
+INSERT INTO TB_PRODUTO_CASAL (FK_PRODUTO, FK_CASAL, TG_RESERVADO, FK_USUARIO) VALUES (1, 3, 0, NULL);
+INSERT INTO TB_PRODUTO_CASAL (FK_PRODUTO, FK_CASAL, TG_RESERVADO, FK_USUARIO) VALUES (2, 2, 1, NULL);
+INSERT INTO TB_PRODUTO_CASAL (FK_PRODUTO, FK_CASAL, TG_RESERVADO, FK_USUARIO) VALUES (3, 3, 0, NULL);
+INSERT INTO TB_PRODUTO_CASAL (FK_PRODUTO, FK_CASAL, TG_RESERVADO, FK_USUARIO) VALUES (4, 4, 1, NULL);
+INSERT INTO TB_PRODUTO_CASAL (FK_PRODUTO, FK_CASAL, TG_RESERVADO, FK_USUARIO) VALUES (5, 5, 0, NULL);
