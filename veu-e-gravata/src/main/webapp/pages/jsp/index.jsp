@@ -5,37 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veu e Gravata - Pagina Inicial</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="../../../styles/estilos.css">
     <link rel="stylesheet" href="../../../styles/index.css">
-
 </head>
 
 <body class="index">
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/pages/jsp/index.jsp"><img src="/assets/logoHeader.png" alt="Logo da Veu e Gravata" id="your-image-id"
-                            class="logo-img"></a>
-                </li>
-                <li><a href="/pages/jsp/index.jsp">Veu e Gravata</a></li>
-                <li><a href="/pages/jsp/casais.jsp">Casais</a></li>
-                <li><a href="/sobre">Sobre Nos</a></li>
-                <li><a href="/pages/jsp/faleConosco.jsp">Fale Conosco</a></li>
-                <li><a href="/pages/jsp/login.jsp" class="bordered-link">Login</a></li>
-                <li><a href="/pages/jsp/cadastro.jsp" class="bordered-link">Cadastre-se</a></li>
-            </ul>
-        </nav>
-    </header>
+    <%@ include file="../../../pages/jsp/shared/header.jsp" %>
 
     <main class="content">
         <div class="image-container">
-
             <img src="../../webapp/assets/home2.png" alt="home2.png" class="background-image">
         </div>
 
         <div>
-
             <p>A lista de presentes com melhor custo-beneficio.</p>
             <p>Mais seguranca para voce e seus convidados!</p>
             <p>Tudo que voce precisa em um so lugar!</p>
@@ -50,16 +31,7 @@
         </div>
     </main>
 
-    <footer>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/veuegravata" target="_blank"><i class="fab fa-instagram"></i>
-                @veuegravata</a>
-            <a href="https://www.tiktok.com/@veuegravata" target="_blank"><i class="fab fa-tiktok"></i>
-                @veuegravata</a>
-        </div>
-    </footer>
-
-
+    <%@ include file="../../../pages/jsp/shared/footer.jsp" %>
 </body>
 
 </html>

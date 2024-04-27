@@ -1,14 +1,13 @@
 package dao;
 
-import model.Login;
-
-import java.sql.ResultSet;
+import model.Usuario;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
-public class LoginDao {
-    public boolean verifyCredentials(Login login) {
+public class UsuarioDao {
+    public Usuario getUsuario(String email) {
 
         String SQL = "SELECT * FROM TB_USUARIO WHERE DS_EMAIL = ?";
 
@@ -17,29 +16,24 @@ public class LoginDao {
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
-            preparedStatement.setString( 1, login.getDS_EMAIL());
+            preparedStatement.setString( 1, email);
 
             ResultSet resultSet = preparedStatement.executeQuery();
 
             System.out.println("Sucesso!");
 
             while (resultSet.next()){
-
-               String DS_SENHA = resultSet.getString("DS_SENHA");
-
-               if(DS_SENHA.equals(login.getDS_SENHA())){
-
-                   return true;
-                }
+                int id = resultSet.getInt("ID_USUARIO");
+                String nome = resultSet.getString("DS_NOME");
+                return new Usuario(id, nome);
             }
 
             connection.close();
 
-            return false;
+            return null;
         } catch (Exception e){
             System.out.println("Error:" + e.getMessage());
-            return false;
+            return null;
         }
     }
 }
-
