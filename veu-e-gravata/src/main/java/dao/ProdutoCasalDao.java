@@ -3,6 +3,7 @@ package dao;
 import model.Casal;
 import model.Produto;
 import model.ProdutoCasal;
+import model.ProdutoComplementar;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -12,9 +13,9 @@ import java.util.ArrayList;
 
 public class ProdutoCasalDao {
 
-    public ArrayList<ProdutoCasal> getProdutoByIdCasal(Casal casal) {
+    public ProdutoCasal getProdutoByIdCasal(Casal casal) {
 
-        String sql = "SELECT TB_PRODUTO.*, TB_CASAL.*, TB_PRODUTO_CASAL.* FROM TB_PRODUTO_CASAL LEFT JOIN TB_CASAL ON TB_CASAL.ID_CASAL = TB_PRODUTO_CASAL.FK_CASAL LEFT JOIN TB_PRODUTO ON TB_PRODUTO.ID_PRODUTO = TB_PRODUTO_CASAL.FK_PRODUTO WHERE TB_CASAL.CD_CASAL = ?";
+        String sql = "SELECT TB_PRODUTO.*, TB_PRODUTO_CASAL.* FROM TB_PRODUTO_CASAL LEFT JOIN TB_PRODUTO ON TB_PRODUTO.ID_PRODUTO = TB_PRODUTO_CASAL.FK_PRODUTO WHERE TB_CASAL.CD_CASAL = ?";
 
         try{
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
@@ -24,7 +25,7 @@ public class ProdutoCasalDao {
             preparedStatement.setInt( 1, casal.getId());
 
             ResultSet resultSet = preparedStatement.executeQuery();
-            ArrayList<ProdutoCasal> listaProduto = new ArrayList<ProdutoCasal>();
+            ArrayList<ProdutoComplementar> listaProduto = new ArrayList<ProdutoComplementar>();
             while (resultSet.next()){
                 int idProduto = resultSet.getInt("TB_PRODUTO.ID_PRODUTO");
                 String nomeProduto = resultSet.getString("TB_PRODUTO.DS_NOME");
@@ -38,12 +39,12 @@ public class ProdutoCasalDao {
 
                 boolean isProdutoReservado = resultSet.getBoolean("TB_PRODUTO_CASAL.TG_RESERVADO");
 
-                ProdutoCasal produtoCasal = new ProdutoCasal(casal, produto, isProdutoReservado);
+                ProdutoComplementar produtoComplementar = new ProdutoComplementar(produto, isProdutoReservado);
 
-                listaProduto.add(produtoCasal);
+                listaProduto.add(produtoComplementar);
             }
 
-            return listaProduto;
+            return new ProdutoCasal(casal, listaProduto);
         } catch (Exception e){
             System.out.println("Error:" + e.getMessage());
             return null;

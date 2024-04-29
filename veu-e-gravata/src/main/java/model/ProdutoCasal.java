@@ -1,9 +1,10 @@
 package model;
 
+import java.util.ArrayList;
+
 public class ProdutoCasal {
     private Casal casal;
-    private Produto produto;
-    private boolean isReservado;
+    private ArrayList<ProdutoComplementar> produtos;
 
     public Casal getCasal() {
         return casal;
@@ -13,20 +14,19 @@ public class ProdutoCasal {
         this.casal = casal;
     }
 
-    public Produto getProduto() {
-        return produto;
+    public ArrayList<ProdutoComplementar> getProdutos() {
+        return produtos;
     }
 
-    public void setProduto(Produto produto) {
-        this.produto = produto;
+    public void setProdutos(ArrayList<ProdutoComplementar> produtos) {
+        this.produtos = produtos;
     }
 
     public ProdutoCasal() {
     }
 
-    public ProdutoCasal(Casal casal, Produto produto, boolean isReservado) {
+    public ProdutoCasal(Casal casal, ArrayList<ProdutoComplementar> produtosComplementar) {
         this.casal = casal;
-        this.produto = produto;
-        this.isReservado = isReservado;
+        this.produtos = produtosComplementar;
     }
 }
