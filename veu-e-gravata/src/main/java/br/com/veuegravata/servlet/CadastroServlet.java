@@ -33,6 +33,6 @@ public class CadastroServlet extends HttpServlet {
         // Por exemplo, você pode chamar um método em uma classe de serviço para fazer isso
 
         // Redirecionar o usuário para a página de confirmação de cadastro
-        response.sendRedirect(request.getContextPath() + "/pages/jsp/confirmacaodecadastro.jsp");
+        response.sendRedirect(request.getContextPath() + "/pages/jsp/confirmacaoDeCadastro.jsp");
     }
 }

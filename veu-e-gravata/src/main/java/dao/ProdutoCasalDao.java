@@ -12,10 +12,9 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 
 public class ProdutoCasalDao {
-
     public ProdutoCasal getProdutoByIdCasal(Casal casal) {
 
-        String sql = "SELECT TB_PRODUTO.*, TB_PRODUTO_CASAL.* FROM TB_PRODUTO_CASAL LEFT JOIN TB_PRODUTO ON TB_PRODUTO.ID_PRODUTO = TB_PRODUTO_CASAL.FK_PRODUTO WHERE TB_CASAL.CD_CASAL = ?";
+        String sql = "SELECT TB_PRODUTO.*, TB_PRODUTO_CASAL.* FROM TB_PRODUTO_CASAL LEFT JOIN TB_PRODUTO ON TB_PRODUTO.ID_PRODUTO = TB_PRODUTO_CASAL.FK_PRODUTO WHERE TB_PRODUTO_CASAL.FK_CASAL = ?";
 
         try{
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");

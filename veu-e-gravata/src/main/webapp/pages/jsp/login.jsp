@@ -16,7 +16,7 @@
 
             <img src="../../webapp/assets/home2.png" alt="home2.png" class="background-image">
         </div>
-        <form action="/login" method="post"> <!-- Corrigido para /login -->
+        <form action="/login" method="post">
 
             <span>${requestScope.message}</span>
 
