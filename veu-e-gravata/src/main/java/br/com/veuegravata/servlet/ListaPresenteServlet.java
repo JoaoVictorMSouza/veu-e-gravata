@@ -19,12 +19,6 @@ import java.io.IOException;
 
 @WebServlet("/listaDePresentes")
 public class ListaPresenteServlet extends HttpServlet {
-
-    //DAR PRESENTE
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    }
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int idCasal = Integer.parseInt(request.getParameter("idCasal"));
