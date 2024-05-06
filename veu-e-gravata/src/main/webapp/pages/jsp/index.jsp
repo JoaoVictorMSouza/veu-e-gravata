@@ -23,7 +23,7 @@
             <p>COMO FUNCIONA?</p>
             <p>1. Crie sua lista de presentes</p>
             <!-- Botao para a página listaDePresente.jsp -->
-            <a href="${pageContext.request.contextPath}/listaDePresentes" class="golden-button">FACA SUA LISTA</a>
+            <a href="/pages/jsp/casal.jsp" class="golden-button">BUSCAR LISTA DE PRESENTES</a>
         </div>
     </main>
 

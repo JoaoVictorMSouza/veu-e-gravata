@@ -21,7 +21,15 @@ import java.io.IOException;
 public class ListaPresenteServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int idCasal = Integer.parseInt(request.getParameter("idCasal"));
+        String idCasalString = request.getParameter("idCasal"))
+
+        if (idCasalString == null) {
+            request.setAttribute("message", "Casal não encontrado. Por favor, tente novamente!");
+
+            request.getRequestDispatcher("/pages/jsp/casal.jsp").forward(request, response);
+        }
+
+        int idCasal = Integer.parseInt(idCasalString);
 
         Casal casal = new CasalDao().getCasalByIdCasal(idCasal);
 
