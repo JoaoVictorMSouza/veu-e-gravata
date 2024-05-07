@@ -21,7 +21,7 @@ import java.io.IOException;
 public class ListaPresenteServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String idCasalString = request.getParameter("idCasal"))
+        String idCasalString = request.getParameter("idCasal");
 
         if (idCasalString == null) {
             request.setAttribute("message", "Casal não encontrado. Por favor, tente novamente!");
