@@ -24,7 +24,7 @@
                             id="your-image-id" class="logo-img"></a>
                 </li>
                 <li><a href="/pages/jsp/index.jsp">Veu e Gravata</a></li>
-                <li><a href="/pages/jsp/casais.jsp">Casais</a></li>
+                <li><a href="/pages/jsp/casal.jsp">Casais</a></li>
                 <li><a href="/pages/jsp/sobre.jsp">Sobre Nos</a></li>
                 <li><a href="/pages/jsp/faleConosco.jsp">Fale Conosco</a></li>
                 <c:if test="${isLogado}">
