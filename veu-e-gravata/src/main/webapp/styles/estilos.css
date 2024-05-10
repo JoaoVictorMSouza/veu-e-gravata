@@ -25,6 +25,7 @@ header {
     background-color: #CBA35C;
     padding: 10px;
     text-align: center;
+    height: 11vh;
 }
 
 header nav ul {
@@ -86,12 +87,16 @@ footer {
 
 .social-icons a {
     color: black;
-    margin: 5px 0;
+    margin: 7px 0;
     text-decoration: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .social-icons a i {
     font-size: 24px;
+    margin-right: 10px;
 }
 
 .social-icons a:hover {

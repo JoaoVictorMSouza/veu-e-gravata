@@ -6,12 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmação de Cadastro</title>
+    <link rel="stylesheet" href="../../../styles/confirmacaoDeCadastro.css"> <!-- Adicionando o CSS faleconosco.css -->
 </head>
 
 <body>
     <%@ include file="../../../pages/jsp/shared/header.jsp" %>
 
-    <main>
+    <main class="main-container">
         <h2>Cadastro Realizado com Sucesso!</h2>
         <p>Obrigado por se cadastrar.</p>
     </main>

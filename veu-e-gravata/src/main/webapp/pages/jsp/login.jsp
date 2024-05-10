@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../../../styles/index.css">
+    <link rel="stylesheet" href="../../../styles/login.css">
 </head>
 
 <body>
@@ -14,7 +15,7 @@
     <main class="content">
         <div class="image-container">
 
-            <img src="../../webapp/assets/home2.png" alt="home2.png" class="background-image">
+            <img src="../../assets/home2.png" alt="home2.png" class="background-image">
         </div>
         <form action="/login" method="post">
 

@@ -1,35 +1,69 @@
 body {
-    background-image: url("../../../assets/home2.png"); /* Define a imagem de fundo */
-    background-size: cover; /* Garante que a imagem de fundo cubra toda a área */
-    background-position: center; /* Centraliza a imagem de fundo */
     color: white; /* Define a cor do texto como branco */
     font-weight: bold; /* Define todas as letras como negrito */
 }
 
+main {
+    padding: 0 !important;
+}
+
 /* Estilo para o conteúdo principal */
-.content {
+.main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center; /* Centraliza horizontalmente */
-    padding: 20px; /* Adiciona um padding ao redor do conteúdo */
     box-sizing: border-box; /* Faz com que o padding seja considerado no cálculo do tamanho total */
+    font-family: "Cardo", serif;
 }
 
 /* Estilo para a imagem de fundo */
-.image-container {
-    margin-bottom: 20px; /* Adiciona espaço abaixo do contêiner de imagem */
+.banners-container {
+    display: flex;
+    width: 100%;
+    height: 89vh;
+    overflow: hidden;
+}
+
+#carouselAutoplaying {
+    width: 100%;
+    max-height: 100%;
+
+}
+
+.banner-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.description-container {
+    width: 100%;
+    height: 70vh;
+    background-color: #fff;
+    color: #CBA35C;
+    display: flex;
+    flex-direction: column;
+}
+
+.gift-container, .steps-container {
+    flex-grow: 1;
+}
+
+.gift-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+}
+
+.gift-container img {
+    width: 250px;
 }
 
 /* Estilo para o contêiner de texto */
 .text-container {
     margin-top: 20px; /* Adiciona espaço acima do contêiner de texto */
-}
-
-.background-image {
-    width: 100%;
-    object-fit: cover;
 }
 
 .golden-button {
@@ -42,7 +76,6 @@ body {
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 20px;
 }
 
 .white-button {
@@ -58,4 +91,39 @@ body {
 .container{
     display: flex;
     flex-direction: column;
+}
+
+.search-couple-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    position: absolute;
+    z-index: 1;
+    top: 55%;
+}
+
+.search-couple-container p {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.steps {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps img {
+    height: 70px;
+}
+
+.steps p {
+    width: 20rem;
 }

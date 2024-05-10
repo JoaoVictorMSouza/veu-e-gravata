@@ -1,0 +1,7 @@
+body {
+    background-image: url("../../../assets/home2.png"); /* Define a imagem de fundo */
+    background-size: cover; /* Garante que a imagem de fundo cubra toda a área */
+    background-position: center; /* Centraliza a imagem de fundo */
+    color: white; /* Define a cor do texto como branco */
+    font-weight: bold; /* Define todas as letras como negrito */
+}
