@@ -49,4 +49,76 @@ public class ProdutoCasalDao {
             return null;
         }
     }
+
+    public void updateProdutoCasal(int idCasal, int idProduto, int idUsuario, int idProdutoCasal) {
+        String sql = "UPDATE TB_PRODUTO_CASAL SET TG_RESERVADO = ?, FK_USUARIO = ? WHERE FK_PRODUTO = ? AND FK_CASAL = ? AND ID_PRODUTO_CASAL = ?;";
+
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setBoolean(1, true);
+            preparedStatement.setInt(2, idUsuario);
+            preparedStatement.setInt(3, idProduto);
+            preparedStatement.setInt(4, idCasal);
+            preparedStatement.setInt(5, idProdutoCasal);
+            preparedStatement.execute();
+
+            connection.close();
+
+        } catch (Exception e) {
+            System.out.println("Erro: " + e.getMessage());
+        }
+    }
+
+    public Boolean verificarSeExisteProdutoCasalEstaReservado(int idProduto, int idCasal, int idProdutoCasal) {
+        String sql = "SELECT * FROM TB_PRODUTO_CASAL WHERE FK_PRODUTO = ? AND FK_CASAL = ? AND ID_PRODUTO_CASAL = ?";
+
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, idProduto);
+            preparedStatement.setInt(2, idCasal);
+            preparedStatement.setInt(3, idProdutoCasal);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()){
+                boolean isProdutoReservado = resultSet.getBoolean("TG_RESERVADO");
+
+                return isProdutoReservado;
+            }
+
+            return false;
+        } catch (Exception e) {
+            System.out.println("Erro: " + e.getMessage());
+            return false;
+        }
+    }
+
+    public int verificarSeExisteProdutoCasalByIdProdutoEIdCasal(int idProduto, int idCasal) {
+        String sql = "SELECT * FROM TB_PRODUTO_CASAL WHERE FK_PRODUTO = ? AND FK_CASAL = ?";
+
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, idProduto);
+            preparedStatement.setInt(2, idCasal);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()){
+                int idProdutoCasal = resultSet.getInt("ID_PRODUTO_CASAL");
+
+                return idProdutoCasal;
+            }
+
+            return -1;
+        } catch (Exception e) {
+            System.out.println("Erro: " + e.getMessage());
+            return -1;
+        }
+    }
 }

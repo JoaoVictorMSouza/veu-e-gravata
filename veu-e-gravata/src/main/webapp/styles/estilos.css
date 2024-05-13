@@ -25,7 +25,8 @@ header {
     background-color: #CBA35C;
     padding: 10px;
     text-align: center;
-    height: 11vh;
+    min-height: 6.5rem;
+    height: 6.5rem;
 }
 
 header nav ul {
@@ -48,6 +49,7 @@ main h2 {
 nav ul {
     display: flex;
     justify-content: center;
+    padding-left: 0;
 }
 
 nav ul li {
@@ -64,6 +66,7 @@ nav ul li p {
     font-family: Arial, sans-serif;
     font-weight: bold;
     font-size: 16px;
+    margin-bottom: 0 !important;
 }
 
 nav ul li a {

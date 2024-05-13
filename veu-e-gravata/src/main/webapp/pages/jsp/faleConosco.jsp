@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veu e Gravata - Casais</title>
-    <link rel="stylesheet" href="../../../styles/faleconosco.css"> <!-- Adicionando o CSS faleconosco.css -->
+    <link rel="stylesheet" href="../../../styles/faleconosco.css">
 </head>
 
 <body>

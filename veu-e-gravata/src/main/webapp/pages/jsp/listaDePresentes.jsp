@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veu e Gravata - Casais</title>
-    <link rel="stylesheet" href="../../../styles/listaDePresentes.css"> <!-- Adicionando o CSS faleconosco.css -->
+    <link rel="stylesheet" href="../../../styles/listaDePresentes.css">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                     <a href="${pageContext.request.contextPath}/presente?idCasal=${produtosCasal.casal.id}&idProduto=${produtoComplementar.produto.id}" class="card-produto">
                         <img src="${pageContext.request.contextPath}/assets/produtos/${produtoComplementar.produto.hxFotoProduto}" alt="Foto do produto">
                         <div class="card-body">
-                            <h5>${produtoComplementar.produto.descricao}</h5>
+                            <h5>${produtoComplementar.produto.nome}</h5>
                             <h5>R$ ${produtoComplementar.produto.preco}</h5>
                         </div>
                     </a>

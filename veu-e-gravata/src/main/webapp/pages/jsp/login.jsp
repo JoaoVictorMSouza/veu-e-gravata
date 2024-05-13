@@ -35,8 +35,6 @@
                 <input type="submit" value="ENTRAR" class="white-button">
             </div>
         </form>
-        </div>
-        </form>
     </main>
 
     <%@ include file="../../../pages/jsp/shared/footer.jsp" %>

@@ -5,3 +5,18 @@ body {
     color: white; /* Define a cor do texto como branco */
     font-weight: bold; /* Define todas as letras como negrito */
 }
+
+input {
+    width: 100%;
+    height: 45px;
+    border: 0;
+    background: none;
+    border-bottom: 2px solid #fff;
+    outline: 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.white-button {
+    margin-top: 25px;
+}
