@@ -22,7 +22,7 @@
 
 .card-produto {
     width: 18rem;
-    border: 1px solid #CBA35C;
+    border: 2px solid #CBA35C;
     border-radius: .25rem;
     color: #000;
     display: flex;
@@ -50,4 +50,6 @@
 
 .grayscale {
     filter: grayscale(100%);
+    background-color: #8080801f;
+    border: 1px solid;
 }
