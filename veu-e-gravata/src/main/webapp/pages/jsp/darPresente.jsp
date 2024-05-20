@@ -69,7 +69,6 @@
                 method: 'POST'
             })
             .then(function(response) {
-                debugger;
                 if(response.ok) {
                     document.getElementById('confirmationModal').style.display = 'flex';
                 }

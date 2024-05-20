@@ -1,9 +1,6 @@
 package dao;
 
-import model.Casal;
-import model.Produto;
-import model.ProdutoCasal;
-import model.ProdutoComplementar;
+import model.*;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -119,6 +116,22 @@ public class ProdutoCasalDao {
         } catch (Exception e) {
             System.out.println("Erro: " + e.getMessage());
             return -1;
+        }
+    }
+
+    public void removerRegistrosDeUmUsuario(Usuario usuario){
+        String sql = "UPDATE TB_PRODUTO_CASAL SET FK_USUARIO = NULL, TG_RESERVADO = 0 WHERE FK_USUARIO = ?;";
+
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, usuario.getId());
+            preparedStatement.execute();
+
+            connection.close();
+        } catch (Exception e) {
+            System.out.println("Erro: " + e.getMessage());
         }
     }
 }

@@ -28,7 +28,7 @@
                 <li><a href="/pages/jsp/sobre.jsp">Sobre Nos</a></li>
                 <li><a href="/pages/jsp/faleConosco.jsp">Fale Conosco</a></li>
                 <c:if test="${isLogado}">
-                    <li><p>Bem-vindo, ${usuarioLogado.getNome()}!</p></li>
+                    <li><p id="username" style="cursor: pointer;">Bem-vindo, ${usuarioLogado.getNome()}!</p></li>
                     <li><a href="/logout" class="bordered-link">Sair</a></li>
                 </c:if>
                 <c:if test="${not isLogado}">
@@ -37,7 +37,71 @@
                 </c:if>
             </ul>
         </nav>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <p>Tem certeza de que deseja excluir sua conta?</p>
+                <button id="delete-btn">Excluir conta</button>
+            </div>
+        </div>
+
+        <div id="confirmationModal" style="display: none;" class="modal-confimacao">
+            <div>
+                <p>Deseja realmente excluir a sua conta?</p>
+            </div>
+            <button id="closeButton" class="golden-button butao">Fechar</button>
+            <button id="deleteButton" class="delete-btn butao">Excluir</button>
+        </div>
     </header>
+
+    <script>
+        var modal = document.getElementById("myModal");
+
+        var btn = document.getElementById("username");
+
+        var nameUser = document.getElementById("username");
+
+        var btnDelete = document.getElementById("delete-btn");
+
+        var deleteButton = document.getElementById("deleteButton");
+
+        var closeButton = document.getElementById("closeButton");
+
+        var modelConfirmacao = document.getElementById("confirmationModal");
+
+        closeButton.onclick = function() {
+            modelConfirmacao.style.display = "none";
+        }
+
+        deleteButton.onclick = function() {
+            modelConfirmacao.style.display = "none";
+            fetch('/usuario', {
+                method: 'DELETE',
+            }).then(function(response) {
+                if (response.ok) {
+                    window.location.href = '/pages/jsp/index.jsp';
+                }
+            })
+        }
+
+        btnDelete.onclick = function() {
+            modal.style.display = "none";
+
+            modelConfirmacao.style.display = "block";
+        }
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal || event.target == btn || event.target == nameUser) {
+                modal.style.display = "block";
+            } else {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>

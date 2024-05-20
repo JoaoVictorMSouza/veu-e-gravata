@@ -159,6 +159,7 @@ a {
 
 form {
     margin-top: 20px;
+    width: 450px;
 }
 
 form label {
@@ -171,6 +172,63 @@ form input {
 }
 
 #carouselExample {
-    max-height: 80vh; /* Defina a altura máxima desejada */
+    max-height: 80vh;
 }
 
+.modal-confimacao {
+    border-radius: 20px;
+    border: 2px solid #CBA35C;
+    background: #fff;
+    height: 25%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    font-size: 28px;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.modal-confimacao div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 65%;
+    top: 10%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+.delete-btn, #delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.butao {
+    width: 150px;
+    height: 70px;
+}

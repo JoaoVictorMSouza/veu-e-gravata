@@ -13,6 +13,7 @@ import java.io.IOException;
 @WebServlet("/casal")
 public class CasalServlet extends HttpServlet {
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String cdCasal = request.getParameter("CD_CASAL");
 

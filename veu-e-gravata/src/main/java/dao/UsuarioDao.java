@@ -36,4 +36,22 @@ public class UsuarioDao {
             return null;
         }
     }
+
+    public void deleteUsuario(Usuario usuario) {
+        String SQL = "DELETE FROM TB_USUARIO WHERE ID_USUARIO = ?";
+
+        try{
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setInt( 1, usuario.getId());
+
+            preparedStatement.execute();
+
+            connection.close();
+        } catch (Exception e){
+            System.out.println("Error:" + e.getMessage());
+        }
+    }
 }

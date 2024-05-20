@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/cadastro")
 public class CadastroServlet extends HttpServlet {
+    
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Obter os parâmetros do formulário
         String nome = request.getParameter("nome");
