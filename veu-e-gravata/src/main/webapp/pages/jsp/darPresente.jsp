@@ -46,11 +46,11 @@
                 </form>
             </div>
         </section>
-        <div id="confirmationModal" style="display: none;" class="modal-confimacao">
+        <div id="confirmationGiftModal" style="display: none;" class="modal-confimacao">
             <div>
                 <p>Sua reserva foi realizada com sucesso!</p>
             </div>
-            <button id="closeButton" class="golden-button">Fechar</button>
+            <button id="closeconfirmationGiftModalButton" class="golden-button">Fechar</button>
         </div>
     </main>
 
@@ -70,7 +70,7 @@
             })
             .then(function(response) {
                 if(response.ok) {
-                    document.getElementById('confirmationModal').style.display = 'flex';
+                    document.getElementById('confirmationGiftModal').style.display = 'flex';
                 }
             })
             .catch(function(error) {
@@ -78,7 +78,7 @@
             });
         });
 
-        var closeButton = document.getElementById('closeButton');
+        var closeButton = document.getElementById('closeconfirmationGiftModalButton');
 
         closeButton.addEventListener('click', function() {
             window.location.href = '/casal?CD_CASAL=' + encodeURIComponent(document.getElementById('CD_CASAL').value);
