@@ -2,7 +2,7 @@ package model;
 
 public class Cadastro {
 
-   private String name;
+   private String name; 
    private String email;
    private String cpf; // Alterado para String
    private String senha;
